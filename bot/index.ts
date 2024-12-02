@@ -11,7 +11,7 @@ const bot = new Telegraf(BOT_TOKEN);
 
 // Basic commands
 bot.command('start', (ctx: any) => {
-  ctx.reply('Welcome to TaskVaultBot! 🚀\nUse /help to see available commands.');
+  ctx.reply('Welcome to the jungle! \nUse /webapp to open the Mini App.');
 });
 
 bot.command('help', (ctx: any) => {
