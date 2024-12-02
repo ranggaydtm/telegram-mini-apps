@@ -17,8 +17,8 @@ bot.command('start', (ctx: any) => {
 bot.command('help', (ctx: any) => {
   ctx.reply(
     'Available commands:\n' +
-    '/start - Start bot\n' +
-    '/help - Help\n' +
+    '/start - Starting bot progress\n' +
+    '/help - Help me\n' +
     '/webapp - Open the Mini App'
   );
 });

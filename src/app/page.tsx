@@ -61,20 +61,14 @@ function TaskBoard() {
 
   return (
     <div className="grid grid-rows-[auto_1fr_auto] min-h-screen p-8 gap-8">
-      <header className="flex items-center justify-between">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <h1 className="text-2xl font-bold">Task Board - Group {groupId}</h1>
+      <header className="flex items-center justify-center">
+        <h1 className="text-2xl font-bold">Hello!</h1>
+        <h1 className="text-2xl font-bold text-[#737373]">Welcome to the Mini Apps</h1>
       </header>
 
       <main className="flex flex-col gap-8">
-        <HomePages />
+        <TaskForm groupId={groupId} />
+        <TaskList groupId={groupId} />
       </main>
 
       <footer className="flex justify-center text-sm text-gray-500">
