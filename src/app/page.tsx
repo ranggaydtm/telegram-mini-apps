@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import Image from "next/image";
 import dynamic from 'next/dynamic';
+import HomePages from "./components";
 import TaskForm from "./components/Form";
 import TaskList from "./components/List";
 import { Suspense, useEffect, useState } from 'react';
 import { useLaunchParams } from "@telegram-apps/sdk-react";
 
-// Créer un composant client-only pour le TaskBoard
 const TaskBoardClient = dynamic(() => Promise.resolve(TaskBoard), {
   ssr: false
 });
@@ -73,12 +74,11 @@ function TaskBoard() {
       </header>
 
       <main className="flex flex-col gap-8">
-        <TaskForm groupId={groupId} />
-        <TaskList groupId={groupId} />
+        <HomePages />
       </main>
 
       <footer className="flex justify-center text-sm text-gray-500">
-        Powered by Next.js
+        Telegram Mini Apps
       </footer>
     </div>
   );
