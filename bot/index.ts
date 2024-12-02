@@ -3,6 +3,9 @@
 const { Telegraf } = require('telegraf');
 const { BOT_TOKEN, WEBAPP_URL } = require('./config');
 
+console.log(BOT_TOKEN, 'token')
+console.log(WEBAPP_URL)
+
 if (!BOT_TOKEN) {
   throw new Error('BOT_TOKEN must be provided!');
 }
@@ -25,7 +28,7 @@ bot.command('help', (ctx: any) => {
 
 bot.command('webapp', (ctx: any) => {
   const chatId = ctx.chat.id;
-  const encodedGroupId = Buffer.from(chatId.toString()).toString();
+  const encodedGroupId = Buffer.from(chatId.toString()).toString('base64');
   
   console.log('Chat ID:', chatId);
   console.log('Encoded Group ID:', encodedGroupId);

@@ -66,10 +66,10 @@ function TaskBoard() {
         <h1 className="text-2xl font-bold text-[#737373]">Welcome to the Mini Apps</h1>
       </header>
 
-      <main className="flex flex-col gap-8">
+      {/* <main className="flex flex-col gap-8">
         <TaskForm groupId={groupId} />
         <TaskList groupId={groupId} />
-      </main>
+      </main> */}
 
       <footer className="flex justify-center text-sm text-gray-500">
         Telegram Mini Apps
