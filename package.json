@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "bot:dev": "ts-node bot/index.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "bot:dev": "ts-node bot/index.ts",
+    "bot:build": "tsc -p bot/tsconfig.json"
   },
   "dependencies": {
     "@telegram-apps/sdk-react": "^2.0.15",

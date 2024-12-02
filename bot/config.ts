@@ -5,6 +5,6 @@ const path = require('path');
 dotenv.config({ path: path.resolve(__dirname, '../.env.local') });
 
 module.exports = {
-  BOT_TOKEN: "7742991693:AAEfrcne8T7JCwKvcf098COVtvLbgbrpXSM",
-  WEBAPP_URL: "https://t.me/MiniapssBot/myapp"
+  BOT_TOKEN: process.env.BOT_TOKEN,
+  WEBAPP_URL: process.env.WEBAPP_URL
 };
