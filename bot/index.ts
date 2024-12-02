@@ -3,9 +3,6 @@
 const { Telegraf } = require('telegraf');
 const { BOT_TOKEN, WEBAPP_URL } = require('./config');
 
-console.log(BOT_TOKEN, 'token')
-console.log(WEBAPP_URL)
-
 if (!BOT_TOKEN) {
   throw new Error('BOT_TOKEN must be provided!');
 }
