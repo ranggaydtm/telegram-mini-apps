@@ -25,8 +25,7 @@ bot.command('help', (ctx: any) => {
 
 bot.command('webapp', (ctx: any) => {
   const chatId = ctx.chat.id;
-  // Encode le chatId en base64
-  const encodedGroupId = Buffer.from(chatId.toString()).toString('base64');
+  const encodedGroupId = Buffer.from(chatId.toString()).toString();
   
   console.log('Chat ID:', chatId);
   console.log('Encoded Group ID:', encodedGroupId);
